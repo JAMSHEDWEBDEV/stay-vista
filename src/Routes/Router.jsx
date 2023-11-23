@@ -4,6 +4,7 @@ import {
   } from "react-router-dom";
 import Main from "../Layouts/Main";
 import Home from "../pages/Home/Home";
+import RoomDetails from "../components/RoomDetails/RoomDetails";
 
 const Router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const Router = createBrowserRouter([
             {
                 path:"/",
                 element:<Home></Home>
+            },
+            {
+                path:"/room/:id",
+                element:<RoomDetails/>
             }
         ]
     }
